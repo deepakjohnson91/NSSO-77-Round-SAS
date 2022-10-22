@@ -1,8 +1,7 @@
 # Working on NSS 77th Round SAS Data using R
 
-This is some tips on how to use R (or RStudio) in analysing the latest unit-level from the Situation Assessment Survey of the NSS. 
-India's National Sample Survey conducted its 77th Round of surveys in 2018-19. Among different topics surveyed was the assessment of farming conditions in India. 
-A brief review of the surveys and some results from the past can be found in the two links given below. 
+Here are some tips on how to use R (or RStudio) in analysing the latest unit-level from the Situation Assessment Survey of the NSS. 
+India's National Sample Survey conducted its 77th Round of surveys in 2018-19. Among different topics covered in this round was the assessment of farming conditions in India. A brief review of the surveys and some results from the past can be found in the two links given below. 
 1. [Situation Assessment Survey of Agricultural Households 2019: A Statistical Note by Aparajita Bakshi](http://ras.org.in/situation_assessment_survey_of_agricultural_households_2019_a_statistical_note)
 2. [The Situation Assessment Surveys: An Evaluation by Biplab Sarkar](http://ras.org.in/index.php?Article=the_situation_assessment_surveys&q=biplab&keys=biplab)
 
@@ -15,7 +14,8 @@ Each line in the text file ("level" files) is an observation and widths (length 
 After generating the datasets, they are combined for visit 1 and 2 at the household level to get the combined year-long estimates. 
 
 ## 2. Analysis
-The datasets are applied weights and each component income (income from crop production, animal resources, etc.) is computed separately. 
+Calculations are performed after applying sample weights (provided by the NSSO). 
+Each component income (income from crop production, animal resources, etc.) is computed separately. 
 These component datasets are combined together to obtain the household income. 
 
 ## 3. Files for extraction and analysis
