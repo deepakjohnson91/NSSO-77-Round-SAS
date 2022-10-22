@@ -28,7 +28,7 @@ The six R files contain the script and comments for basic analysis of the unit-l
 5. Non-Farm_Business_Income.R
 6. HH_Income.R - combines crop income, animal income, wage, rent, and non-farm business income to calculate household incomes
 
-There are supporting files also for different purposes. 
+There are five supporting files for different purposes. 
 1. Levels_Codes.xlsx - the widths specified by NSS for data extraction; as given in the "NSS_77th_Layout_Sch_33.1_mult_post.xls" file given in the NSS website link
 2. List_State.xlsx - codes for States
 3. List_Social_Group.xlsx - codes for social groups
