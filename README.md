@@ -20,7 +20,8 @@ These component datasets are combined together to obtain the household income.
 
 ## 3. Files for extraction and analysis
 
-The six R files contain the script and comments for basic analysis of the unit-level data. All these files use data from both the visits.
+The six R files contain the script and comments for basic analysis of the unit-level data. All these files use data from both the visits. 
+I followed the below order in running my analysis. 
 1. Common_Agri_HH.R - for identifying the agricultural households that are common across two visits
 2. Crop_Income.R - calculating crop income at paid-out approach
 3. Animal_Income.R - animal income at paid-out approach
