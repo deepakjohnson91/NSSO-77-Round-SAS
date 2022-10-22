@@ -43,5 +43,7 @@ These inconsistencies are addressed in a separate file - ISSUES.md.
 To the extent possible, a uniform format is used for writing codes. 
 But a thorough check for consistency has not been performed. In case of any doubts/errors, please let me know. 
 
+Finally, I have started working on R very recently. So there could be many errors in my approach and method. Kindly let me know where improvements are required. 
+
 ## Acknowledgement
 Thanks to Arindam Das, Soham Bhattacharya, and other colleagues from the [Foundation for Agrarian Studies](https://fas.org.in/) for all their help. 
