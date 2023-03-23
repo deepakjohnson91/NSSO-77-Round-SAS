@@ -161,15 +161,17 @@ colnames(An_In_V1_V2) <- c("HH_ID", "State", "Weights", "HH_Size",
                            "HH_classification", "An_Inc_V1", "An_Inc_V2")
 
 # Check for animal incomes - whether it is correct
-wtd.mean(An_In_V1_V2$An_Inc_V1, weights=An_In_V1_V2$Weights) # The output is Rs 1609.52 ~ very similar to the report's value (Rs 1,598 per month)
-wtd.mean(An_In_V1_V2$An_Inc_V2, weights=An_In_V1_V2$Weights) # The output is Rs 1554.482 ~ very similar to the report's value (Rs 1,552 per month)
+wtd.mean(An_In_V1_V2$An_Inc_V1, weights=An_In_V1_V2$Weights) # The output is Rs 1599.371 ~ very similar to the report's value (Rs 1,598 per month)
+wtd.mean(An_In_V1_V2$An_Inc_V2, weights=An_In_V1_V2$Weights) # The output is Rs 1548.685 ~ very similar to the report's value (Rs 1,552 per month)
+
+# The actual calculation for combining animal income is to take 8/12 of visit 1 and 4/12 of visit 2 (thanks to the researchers from FAS).
 
 # Create a new column summing up incomes from V1 and V2
 An_In_V1_V2 <- An_In_V1_V2 %>% 
-  mutate(An_Inc = An_Inc_V1 + An_Inc_V2)
+  mutate(An_Inc = (An_Inc_V1*8/12) + (An_Inc_V2*4/12))
 
-wtd.mean(An_In_V1_V2$An_Inc, weights=An_In_V1_V2$Weights)/2 # Divide by 2 as it is the monthly income for both periods
-# The output is Rs 1582.001 ~ very similar to the report's value (Rs 1582 per month)
+wtd.mean(An_In_V1_V2$An_Inc, weights = An_In_V1_V2$Weights)
+# The output is Rs 1582.476 ~ very similar to the report's value (Rs 1582 per month)
 
 # Change the filename (by creating a new file) for consistency
 Agri_AnInc <- An_In_V1_V2
