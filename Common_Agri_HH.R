@@ -3,7 +3,7 @@
 # The crop production and all other data are given for common households from 1 & 2 visits. 
 # In this workbook, we select the common households from both the visits, and combine some basic features. 
 # The report gives the number of common no. of agri. households in the sample as 44,740.
-# For Visit 1 it was 45,714 and for Visit 2 it was	44,770. 
+# For Visit 1 it was 45,714 and for Visit 2 it was 44,770. 
 # The weights of Visit 2 have to be used while combining data from both visits. 
 # There is an extra five HHs within Visit 1. These have to be removed to reach the number of 44,770. 
 # This information was provided by Sethu (please check the README file).
