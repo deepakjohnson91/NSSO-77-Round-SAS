@@ -88,8 +88,8 @@ Agri_CropInc_V1 <- Agri_CropInc_V1 %>%
 # Compute weighted mean of the FBI for checking with the report - functions from Hmisc package
 wtd.mean(Agri_CropInc_V1$FBI, weights=Agri_CropInc_V1$Weights)/6 # Since the income is for all six months covered under V 1, divide the total by 6
 
-# The FBI is Rs 4026.897 ~ close to Rs 4001 from the report. 
-# The difference could be due to an additional 5 HHs in the unit-level data. 
+# The FBI is Rs 4012.725 ~ close to Rs 4001 from the report. 
+# I am not very sure of the difference. 
 
 #### Visit 2 ####
 
@@ -155,8 +155,7 @@ Agri_CropInc_V2 <- Agri_CropInc_V2 %>%
 # Compute weighted mean of the FBI for checking with the report - functions from Hmisc package
 wtd.mean(Agri_CropInc_V2$FBI, weights=Agri_CropInc_V2$Weights)/6 # Since the income is for all six months covered under V 2, divide the total by 6
 
-# The FBI is Rs 3613.721 ~ close to Rs 3584 from the report. 
-# The difference could be due to an additional 5 HHs in the unit-level data. 
+# The FBI is Rs 3583.748 ~ same as Rs 3584 from the report. 
 
 #### Combine Visits 1 & 2 ####
 
@@ -178,7 +177,7 @@ Agri_CropInc <- Agri_CropInc %>%
 # Check if the crop incomes are similar with the report
 wtd.mean(Agri_CropInc$FBI, weights=Agri_CropInc$Weights)/12 # By 12 because it combines both V 1 and V 2
 
-# The value is Rs 3820.309 ~ report shows the value as Rs 3798, which is very close. 
+# The value is Rs 3798.236 ~ report shows the value as Rs 3798, which is the same. 
 
 # Save the dataset
 save(Agri_CropInc, file = "Crop_Income.RData")
