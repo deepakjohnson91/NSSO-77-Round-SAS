@@ -5,10 +5,8 @@
 # The report gives the number of common no. of agri. households in the sample as 44,740.
 # For Visit 1 it was 45,714 and for Visit 2 it was	44,770. 
 # The weights of Visit 2 have to be used while combining data from both visits. 
-# Issues: While the report says the number of HHs is 44,770, the actual number is 44,775. 
-# Issues: The discrepancy in number of HHs comes from the number total number of HHs. 
-# Issues: The report gives the total HHs as 58,035 (Visit 1) but the unit-level data gives 58,040 HH records. 
-# Issues: The additional five HHs has been accounted for in all calculations - one probable reason for why the figures do not match exactly with the report. 
+# There is an extra five HHs within Visit 1. These have to be removed to reach the number of 44,770. 
+# This information was provided by Sethu (please check the README file).
 # Aside: Excel tables can be downloaded from page 175 of the report by clicking on the hyperlinks. 
 
 # Load packages
@@ -31,6 +29,10 @@ State_list <- read_excel("List_State.xlsx")
 Level_3_V1 <-read.fwf(file = "~/Work/NSSO 77 SAS Data Work/Visit 1/r77s331v1L03.txt",
                      widths = Level3$Length,
                      col.names = Level3$Name)
+
+# Drop the observations with multiplier = 0 (thanks to Sethu)
+Data_3_V1 <- Data_3_V1 %>% 
+  filter(Multiplier != 0)
 
 # Make a new column for weights (formula from Documentation)
 Level_3_V1 <- Level_3_V1 %>%
