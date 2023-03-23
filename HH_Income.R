@@ -40,13 +40,11 @@ colnames(Agri_HH_Income) <- c("HH_ID", "State", "Weights", "Religion",
 # Convert all NA into 0
 Agri_HH_Income[is.na(Agri_HH_Income)] = 0
 
-# Standardise all column for monthly data
+# Standardise all column for monthly data (except for animal incomes and non-farm business income, which were already done in the files)
 Agri_HH_Income$FBI <- Agri_HH_Income$FBI/12
-Agri_HH_Income$`Animal Income`<- Agri_HH_Income$`Animal Income`/2
 Agri_HH_Income$Wages <- Agri_HH_Income$Wages/12
 Agri_HH_Income$`Pensions/Remittances` <- Agri_HH_Income$`Pensions/Remittances`/12
 Agri_HH_Income$`Rent from leased-out land` <- Agri_HH_Income$`Rent from leased-out land`/12
-Agri_HH_Income$`Non-farm Income` <- Agri_HH_Income$`Non-farm Income`/2
 
 # Compute a new column for HH total income
 Agri_HH_Income <- Agri_HH_Income %>% 
@@ -62,7 +60,7 @@ wtd.mean(Agri_HH_Income$`Rent from leased-out land`, weights=Agri_HH_Income$Weig
 wtd.mean(Agri_HH_Income$`Non-farm Income`, weights=Agri_HH_Income$Weights)
 wtd.mean(Agri_HH_Income$HH_Inc, weights = Agri_HH_Income$Weights)
 
-# The output is Rs 10233.94 ~ report gives the figure of Rs 10,218 (very similar - difference mainly due to crop income)
+# The output is Rs 10218.18 ~ report gives the figure of Rs 10,218
 
 # Save the dataset
 save(Agri_HH_Income, file = "Agri_Household_Income.RData")
