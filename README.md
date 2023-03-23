@@ -51,5 +51,10 @@ But a thorough check for consistency has not been performed. In case of any doub
 
 Finally, I have started working on R very recently. So there could be errors in my approach and method. Kindly let me know where improvements are required. 
 
+## 5. License
+
+This work is licensed under the [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.html) license. This work is free: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This work is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
 ## Acknowledgement
 Thanks to Arindam Das, Soham Bhattacharya, and other colleagues from the [Foundation for Agrarian Studies](https://fas.org.in/) for all their help. And many thanks to C. A. Sethu for writing better codes and resolving the pending issues. 
