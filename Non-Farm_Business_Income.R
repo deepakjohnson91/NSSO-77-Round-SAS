@@ -52,7 +52,7 @@ NBI_13_V1 <- NBI_13_V1[,names(NBI_13_V1) %in% Col_Need]
 # Estimate the non-farm business income per household
 wtd.mean(NBI_13_V1$Net.receipts.col.5...col.4., weights = NBI_13_V1$Weights) # Since it collected for 30 days, not dividing it by any value
 
-# Output is Rs 640.4297 ~ close to Rs 641 in the report. 
+# Output is Rs 641.9292 ~ close to Rs 641 in the report. 
 
 #### Visit 2 ####
 
@@ -84,7 +84,7 @@ NBI_13_V2 <- NBI_13_V2[,names(NBI_13_V2) %in% Col_Need]
 # Estimate the non-farm business income per household
 wtd.mean(NBI_13_V2$Net.receipts.col.5...col.4., weights = NBI_13_V2$Weights) # Since it collected for 30 days, not dividing it by any value
 
-# Output is Rs 636.2709 ~ close to Rs 638 in the report. 
+# Output is Rs 637.7606 ~ close to Rs 638 in the report. 
 
 #### Combine Visits 1 & 2 ####
 
@@ -102,14 +102,14 @@ colnames(Agri_NBInc) <- c("HH_ID", "State", "Weights","HH_Size", "Religion",
 # Convert all NA into 0
 Agri_NBInc[is.na(Agri_NBInc)] = 0
 
-# Create a column for combined crop income
+# Create a column for combined crop income; same as how animal income was combined
 Agri_NBInc <- Agri_NBInc %>% 
-  mutate(NBI = NBI_V1 + NBI_V2)
+  mutate(NBI = (NBI_V1*8/12) + (NBI_V2*4/12))
 
 # Check if the crop incomes are similar with the report
-wtd.mean(Agri_NBInc$NBI, weights=Agri_NBInc$Weights)/2 # By 2 because it combines both V 1 and V 2
+wtd.mean(Agri_NBInc$NBI, weights=Agri_NBInc$Weights)
 
-# The value is Rs 638.3503 ~ report shows the value as Rs 641, which is very close. 
+# The value is Rs 640.5397 ~ report shows the value as Rs 641. 
 
 # Save the dataset
 save(Agri_NBInc, file = "Non-Farm_Business_Income.RData")
