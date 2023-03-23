@@ -59,7 +59,7 @@ wtd.mean(Agri_OInc_V1$Pensions, weights=Agri_OInc_V1$Weights)/6 # Since the inco
 wtd.mean(Agri_OInc_V1$Lease_Rent, weights=Agri_OInc_V1$Weights)/6 # Since the income is for all six months covered under V 1, divide the total by 6
 
 # Output reported and figures from the report are as follows
-# Output | Wages = 3933.673; Lease_Rent = 111.4353; Pensions = 580.4475
+# Output | Wages = 3935.742; Lease_Rent = 111.6962; Pensions = 581.8065
 # Report | Wages = 3932; Lease_Rent = 113; Pensions = 578
 
 #### Visit 2 ####
@@ -96,7 +96,7 @@ wtd.mean(Agri_OInc_V2$Pensions, weights=Agri_OInc_V2$Weights)/6 # Since the inco
 wtd.mean(Agri_OInc_V2$Lease_Rent, weights=Agri_OInc_V2$Weights)/6 # Since the income is for all six months covered under V 1, divide the total by 6
 
 # Output reported and figures from the report are as follows
-# Output | Wages = 4184.904; Lease_Rent = 156.5465; Pensions = 639.0124
+# Output | Wages = 4189.501; Lease_Rent = 156.9131; Pensions = 640.5086
 # Report | Wages = 4190; Lease_Rent = 157; Pensions = 641
 
 #### Combine Visits 1 & 2 ####
@@ -126,7 +126,7 @@ wtd.mean(Agri_OInc$Pensions, weights=Agri_OInc$Weights)/12 # By 12 because it co
 wtd.mean(Agri_OInc$Lease_Rent, weights=Agri_OInc$Weights)/12 # By 12 because it combines both V 1 and V 2
 
 # Output reported and figures from the report are as follows
-# Output | Wages = 4059.289; Lease_Rent = 133.9909; Pensions = 609.7299
+# Output | Wages = 4062.621; Lease_Rent = 134.3046; Pensions = 611.1576
 # Report | Wages = 4063; Lease_Rent = 134; Pensions = 611
 
 # Save the dataset
