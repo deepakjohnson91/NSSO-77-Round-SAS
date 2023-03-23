@@ -1,5 +1,7 @@
 # Working on NSS 77th Round SAS Data using R
 
+This documentation pertains to my experiments with the unit-level data of the Situation Assessment Survey (SAS). My friend [C. A. Sethu](https://github.com/s7u512) has greatly improved this work and resolved the issues that I mention in this repository. His repository (with all the scripts) can be found [here](https://github.com/s7u512/NSSO-77-SAS). If you would like to work on the unit-level data, please take a look at his repo.  
+
 Here are some tips on how to use R (or RStudio) in analysing the latest unit-level from the Situation Assessment Survey of the NSS. 
 India's National Sample Survey conducted its 77th Round of surveys in 2018-19. Among different topics covered in this round was the assessment of farming conditions in India. A brief review of the surveys and some results from the past can be found in the two links given below. 
 1. [Situation Assessment Survey of Agricultural Households 2019: A Statistical Note by Aparajita Bakshi](http://ras.org.in/situation_assessment_survey_of_agricultural_households_2019_a_statistical_note)
@@ -47,4 +49,4 @@ But a thorough check for consistency has not been performed. In case of any doub
 Finally, I have started working on R very recently. So there could be many errors in my approach and method. Kindly let me know where improvements are required. 
 
 ## Acknowledgement
-Thanks to Arindam Das, Soham Bhattacharya, and other colleagues from the [Foundation for Agrarian Studies](https://fas.org.in/) for all their help. 
+Thanks to Arindam Das, Soham Bhattacharya, and other colleagues from the [Foundation for Agrarian Studies](https://fas.org.in/) for all their help. And many thanks to C. A. Sethu for writing better codes and resolving the pending issues. 
