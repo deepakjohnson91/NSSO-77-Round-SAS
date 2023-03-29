@@ -57,4 +57,4 @@ This work is licensed under the [GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0
 This work is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 ## Acknowledgement
-Thanks to Arindam Das, Soham Bhattacharya, and other colleagues from the [Foundation for Agrarian Studies](https://fas.org.in/) for all their help. And many thanks to C. A. Sethu for writing better codes and resolving the pending issues. 
+Thanks to Arindam Das, Soham Bhattacharya, and other colleagues from the [Foundation for Agrarian Studies](https://fas.org.in/) for all their help. And many thanks to C. A. Sethu for writing better codes and resolving the earlier issues. 
